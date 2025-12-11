@@ -8,7 +8,7 @@ public class BinaryConverterRunner
 
     	System.out.println(steve.getValue());
 
-    	steve.setValue(100);
+    	steve.setValue(153);
 
     	System.out.println(steve.getValue());
 
@@ -16,7 +16,7 @@ public class BinaryConverterRunner
 
     	System.out.println((int)Math.pow(2,4));
 
-    	BinaryConverter jane = new BinaryConverter("11010011");
+    	BinaryConverter jane = new BinaryConverter("00000001");
 
     	System.out.println(jane.getBinary());
 
