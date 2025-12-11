@@ -21,6 +21,10 @@ public class BinaryConverterRunner
     	System.out.println(jane.getBinary());
 
     	System.out.println(jane.toDecimal());
+
+		BinaryConverter tom = new BinaryConverter(152, "10011000");
+
+		System.out.println(tom);
     }
 
 

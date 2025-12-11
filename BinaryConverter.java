@@ -24,6 +24,18 @@ public class BinaryConverter
     	binaryValue=newBinary;
     }
 
+    public BinaryConverter(int newValue, String newBinary)
+    {
+        value=newValue;
+        binaryValue=newBinary;
+    }
+
+    public BinaryConverter(String newBinary, int newValue)
+    {
+        value=newValue;
+        binaryValue=newBinary;
+    }
+
     //Methods
     public int getValue()
     {
@@ -77,6 +89,15 @@ public class BinaryConverter
             if  (tempBin.charAt(i) == '1')
                 valOut += Math.pow(2, tempBin.length() - 1 - i);
     	return valOut;
+    }
+
+    //Override the code of the toString method
+    public String toString()
+    {
+        return "The decimal value is " + value + "\n" +
+               "The binary value is " + binaryValue + "\n" +
+               "The decimal converted to binary is " + toBinary() + "\n" +
+               "The binary converted to decimal is " + toDecimal() + "\n";
     }
 
 
